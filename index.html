@@ -1,56 +1,311 @@
-<!DOCTYPE HTML>
-<!--
-	Eventually by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>DataViz Mx</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-	</head>
-	<body class="is-preload">
+<!doctype html>
 
-		<!-- Header -->
-			<header id="header">
-				<h1>Diseño de la información y visualización de datos en México</h1>
-				<p>En construcción</p>
-			</header>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
 
-		<!-- Signup Form -->
-			<!-- <form id="signup-form" method="post" action="#">
-				<input type="email" name="email" id="email" placeholder="Email Address" />
-				<input type="submit" value="Sign Up" />
-			</form> -->
+  <title>Pandita Verde</title>
+  <meta name="robots" content="noindex" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<!-- Footer -->
-			<footer id="footer">
-				<ul class="icons">
-					<li><a href="https://twitter.com/datavizmx" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-					<!-- <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li> -->
-					<!-- <li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li> -->
-					<li><a href="https://www.facebook.com/DataVizMx/" class="icon fab fa-facebook-square"><span class="label">Facebook</span></a></li>
-				</ul>
-				<ul class="copyright">
-					<li>&copy; DataViz Mx.</li><li>Credits: <a href="http://html5up.net">HTML5 UP</a></li>
-				</ul>
-			</footer>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/bulma.min.css">
+	<link rel="stylesheet" href="css/my_style.css">
+  <script src="js/scripts.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
 
-		<!-- Scripts -->
-			<script src="assets/js/main.js"></script>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-124604389-1"></script>
-			<script>
-			  window.dataLayer = window.dataLayer || [];
-			  function gtag(){dataLayer.push(arguments);}
-			  gtag('js', new Date());
+<body>
+  <div id="page" class="site">
 
-			  gtag('config', 'UA-124604389-1');
-			</script>
+	<nav id="site-navigation" class="navbar is-transparent" role="navigation" aria-label="main navigation">
+		<div class="container">
 
+			<div class="navbar-brand">
+				<a class="navbar-item my-brand" href="index.html"><span class="logo"><img src="img/Logo_Conacyt.png" alt=""> </span> <span class="txt-acro">PROGRAMA NACIONAL ESTRATÉGICO CONOCIMIENTO Y GESTIÓN EN CUENCAS DEL <span class="br"></span> CICLO SOCIO-NATURAL DEL AGUA PARA EL BIEN COMÚN Y LA JUSTICIA AMBIENTAL</span></a>
 
-	</body>
+				<a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+	                <span aria-hidden="true"></span>
+	                <span aria-hidden="true"></span>
+	                <span aria-hidden="true"></span>
+              	</a>
+			</div>
+
+			<div id="navbarBasicExample" class="navbar-menu">
+				<div class="navbar-end">
+					<div class="menu-menu-ppal-container">
+					<ul id="primary-menu" class="menu">
+					<li><a href="index.html">Datos</a></li>
+					<li><a href="about.html">Herramientas</a></li>
+					<li><a href="resume.html">Divulgación</a></li>
+					</ul>
+					</div>	
+				</div>
+			</div>
+
+		</div>
+	</nav>
+
+	<!-- -------------------------------------------------------- -->
+	<div class="homepage">
+	<section class="hero">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-7">
+                    <h1>Sistema de información unificado sobre Agua y Cuencas en México</h1>
+                    <h2>Conocimiento y gestión de información sobre el agua en México</h2>
+
+                    <div class="field has-addons">
+                        <input class="input" type="text" placeholder="Ej. Cuenca Noroeste">
+                        <a class="button is-info"><span>Buscar</span> <i class="fas fa-search"></i></a>
+                    </div>
+                    <ul class="menu-home">
+                      <li><a href="#">Cuerpos de agua</a></li>
+                      <li><a href="#">Actores</a></li>
+                      <li><a href="#">Regiones</a></li>
+                    </ul>
+                </div>
+
+                <div class="column is-2"></div>
+                <div class="column is-2 img-ppal"></div>
+                <div class="column is-1"></div>
+
+            </div>
+        </div>
+	</section>
+<!-- -------------------------------------------------------- -->
+	<section class="datos">
+	  <div class="container">
+        <h2 class="title">Datos abiertos sobre el agua en México</h2>
+
+	    <div class="columns">
+	      <div class="column cuerpos">
+          <div class="column-title">
+              <h3>Cuerpos de agua</h3>
+              <h4>1,674 conjuntos de datos</h4>
+          </div>
+
+              <ul>
+                  <li class="cardo">
+                      <a href="#">
+                        <p class="card-title">Cuencas hidrológicas</p>  
+                        <p class="card-number">757 Conjuntos de datos</p>
+                      </a>
+                  </li>
+                  <li class="cardo">
+                    <a href="#">
+                      <p class="card-title">Litorales</p>  
+                      <p class="card-number">154 Conjuntos de datos</p>
+                    </a>
+                </li>
+                <li class="cardo">
+                    <a href="#">
+                      <p class="card-title">Lagunas costeras</p>  
+                      <p class="card-number">90 Conjuntos de datos</p>
+                    </a>
+                </li>
+                <li class="cardo">
+                    <a href="#">
+                      <p class="card-title">Cuerpos de agua interiores</p>  
+                      <p class="card-number">23 Conjuntos de datos</p>
+                    </a>
+                </li>
+                <li class="cardo">
+                    <a href="#">
+                      <p class="card-title">Agua dulce renovable</p>  
+                      <p class="card-number">57 Conjuntos de datos</p>
+                    </a>
+                </li>
+              </ul>
+            <button class="button todos">Ver todos</button>
+          </div>
+
+	      <div class="column actores">
+          <div class="column-title">
+            <h3>Actores</h3>
+            <h4>1,674 conjuntos de datos</h4>
+          </div>
+
+            <ul>
+                <li class="cardo">
+                    <a href="#">
+                      <p class="card-title">CONAGUA</p>  
+                      <p class="card-number">34 Conjuntos de datos</p>
+                    </a>
+                </li>
+                <li class="cardo">
+                  <a href="#">
+                    <p class="card-title">SEMARNAT</p>  
+                    <p class="card-number">154 Conjuntos de datos</p>
+                  </a>
+              </li>
+              <li class="cardo">
+                  <a href="#">
+                    <p class="card-title">UNAM</p>  
+                    <p class="card-number">90 Conjuntos de datos</p>
+                  </a>
+              </li>
+              <li class="cardo">
+                  <a href="#">
+                    <p class="card-title">SACMEX</p>  
+                    <p class="card-number">23 Conjuntos de datos</p>
+                  </a>
+              </li>
+              <li class="cardo">
+                  <a href="#">
+                    <p class="card-title">INEGI</p>  
+                    <p class="card-number">57 Conjuntos de datos</p>
+                  </a>
+              </li>
+            </ul>
+            <button class="button todos">Ver todos</button>
+        </div>
+
+        <div class="column regiones">
+          <div class="column-title">
+            <h3>Regiones</h3>
+            <h4>1,674 conjuntos de datos</h4>
+          </div>
+
+            <ul>
+                <li class="cardo">
+                    <a href="#">
+                      <p class="card-title">Península de Baja California</p>  
+                      <p class="card-number">757 Conjuntos de datos</p>
+                    </a>
+                </li>
+                <li class="cardo">
+                    <a href="#">
+                      <p class="card-title">Noroeste</p>  
+                      <p class="card-number">757 Conjuntos de datos</p>
+                    </a>
+                </li>
+                <li class="cardo">
+                  <a href="#">
+                    <p class="card-title">Río Bravo</p>  
+                    <p class="card-number">154 Conjuntos de datos</p>
+                  </a>
+              </li>
+              <li class="cardo">
+                  <a href="#">
+                    <p class="card-title">Cuencas centrales</p>  
+                    <p class="card-number">90 Conjuntos de datos</p>
+                  </a>
+              </li>
+              <li class="cardo">
+                  <a href="#">
+                    <p class="card-title">Valle de México</p>  
+                    <p class="card-number">23 Conjuntos de datos</p>
+                  </a>
+              </li>
+            </ul>
+            <button class="button todos">Ver todos </button>
+        </div>
+
+	    </div>
+	  </div>
+	</section>
+<!-- -------------------------------------------------------- -->
+  <!-- <div class="before-tools"></div> -->
+	<section class="tools">
+	  <div class="container">
+
+	    <h2 class="title">Herramientas de visualización</h2>
+
+	    <div class="columns">
+	      <div class="column">
+            <figure>
+                <img src="img/tool-1.png" alt="">
+                <figcaption>Generador de mapas</figcaption>
+              </figure>
+	      </div>
+
+          <div class="column">
+            <figure>
+                <img src="img/tool-2.png" alt="">
+                <figcaption>Generador de gráficas</figcaption>
+              </figure>
+	      </div>
+	      
+	    </div>
+	  </div>
+
+      <ul class="paginator">
+        <li class="active"></li>
+        <li></li>
+        <li></li>
+      </ul>
+	</section>
+  <!-- <div class="after-tools"></div> -->
+<!-- -------------------------------------------------------- -->
+	<section class="divulgacion">
+	  <div class="container">
+
+	    <h2 class="title">Investigaciones</h2>
+	    <div class="columns">
+            
+            <div class="column">
+                <figure>
+                    <img src="img/pdf.png" alt="">
+                    <figcaption>El problema hídrico de Naolinco, Veracruz</figcaption>
+                  </figure>
+              </div>
+
+              <div class="column">
+                <figure>
+                    <img src="img/pdf.png" alt="">
+                    <figcaption>Cultura del agua en el ámbito internacional</figcaption>
+                  </figure>
+              </div>
+
+              <div class="column">
+                <figure>
+                    <img src="img/pdf.png" alt="">
+                    <figcaption>La cultura sustentable del agua en la CDMX</figcaption>
+                  </figure>
+              </div>
+
+              <div class="column">
+                <figure>
+                    <img src="img/pdf.png" alt="">
+                    <figcaption>Aproximaciones a la educación ambiental</figcaption>
+                  </figure>
+              </div>
+	    </div>
+      <ul class="paginator">
+        <li class="active"></li>
+        <li></li>
+        <li></li>
+      </ul>
+	  </div>
+	</section>
+<!-- -------------------------------------------------------- -->
+	<footer id="colophon" class="site-footer">
+		<div class="container">
+			<div class="columns">
+			<div class="column is-4">
+				<p>CONACYT <br>
+                    Av. Insurgentes Sur 1582,
+                    Col. Crédito Constructor
+                    Alcaldía Benito Juárez, C.P. 03940,
+                    Ciudad de México<br>
+                    Tel: (55) 5322-7700</p>
+			</div>
+
+            <div class="column is-1"></div>
+
+			<div class="column">
+			    <p>Comentarios, sugerencias y dudas sobre este portal de internet y sus sistemas: 
+                <br><a href="#">Centro de Contacto y Soporte Técnico</a></p>
+                <p>Derechos reservados © 2019
+                    Consejo Nacional de Ciencia y Tecnología</p>
+                <p><a href="#">Políticas de Privacidad</a></p>
+			</div>
+			</div>
+		</div>
+	</footer>
+</div>
+
+</body>
 </html>
